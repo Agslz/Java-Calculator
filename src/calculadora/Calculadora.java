@@ -366,9 +366,8 @@ public class Calculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
     private void btn_potenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_potenciaActionPerformed
-        String texto = txtOperacion.getText().substring(0, txtOperacion.getText().length() - 1);
+        String texto = txtOperacion.getText().substring(0, txtOperacion.getText().length()-1);
         txtOperacion.setText(texto);
         btn_igual.doClick();
     }//GEN-LAST:event_btn_potenciaActionPerformed
@@ -533,25 +532,20 @@ public class Calculadora extends javax.swing.JFrame {
     }
 
     public void cambiarColorBtn1(JButton btn) {
-
         btn.setIcon(new ImageIcon(getClass().getResource("/images/btn1_dark.png")));
         btn.setPressedIcon(new ImageIcon(getClass().getResource("/images/btn1_dark.png")));
         btn.setRolloverIcon(new ImageIcon(getClass().getResource("/images/btn1_pressed_dark.png")));
         btn.setForeground(Color.decode("#247632"));
-
     }
 
     public void cambiarColorBtn2(JButton btn) {
-
         btn.setIcon(new ImageIcon(getClass().getResource("/images/btn2_dark.png")));
         btn.setPressedIcon(new ImageIcon(getClass().getResource("/images/btn2_dark.png")));
         btn.setRolloverIcon(new ImageIcon(getClass().getResource("/images/btn1_pressed_dark.png")));
         btn.setForeground(Color.decode("#96a8a0"));
-
     }
 
     public void addNumber(String digito) {
-        
         txtOperacion.setText(txtOperacion.getText() + digito);
     }
 
