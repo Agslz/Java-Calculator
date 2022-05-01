@@ -8,16 +8,16 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class Calculadora extends javax.swing.JFrame {
-    
+
     ScriptEngineManager sem = new ScriptEngineManager();
     ScriptEngine se = sem.getEngineByName("JavaScript");
-    
+
     public Calculadora() {
         initComponents();
         setResizable(false); //Hace que no se pueda agrandar la pestaña
         setLocationRelativeTo(null); //Hace que la aplicación se ejecute al medio de la pantalla
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -375,13 +375,9 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btn_raizcuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_raizcuadradaActionPerformed
         double ope1, res;
-        
         ope1 = Integer.parseInt(txtOperacion.getText());
-        
         res = Math.sqrt(ope1);
-        
         txtResultado.setText(String.valueOf(res));
-        
         addNumber("√");
     }//GEN-LAST:event_btn_raizcuadradaActionPerformed
 
@@ -470,16 +466,17 @@ public class Calculadora extends javax.swing.JFrame {
         addNumber("0");
         btn_igual.doClick();
     }//GEN-LAST:event_btn_0ActionPerformed
-    
+
     boolean modoOscuro = false;
 
     private void btn_oscuroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_oscuroActionPerformed
+
         if (!modoOscuro) {
             jPanel1.setBackground(Color.decode("#212b41"));
             jPanel2.setBackground(Color.decode("#2e3951"));
-            txtOperacion.setForeground(Color.decode("#5d9664"));
-            txtResultado.setForeground(Color.decode("#5d9664"));
-            
+            txtOperacion.setForeground(Color.decode("#247632"));
+            txtResultado.setForeground(Color.decode("#247632"));
+
             cambiarColorBtn1(btn_multiplicacion);
             cambiarColorBtn1(btn_resta);
             cambiarColorBtn1(btn_suma);
@@ -487,7 +484,7 @@ public class Calculadora extends javax.swing.JFrame {
             cambiarColorBtn1(btn_c);
             cambiarColorBtn1(btn_division);
             cambiarColorBtn1(btn_potencia);
-            
+
             cambiarColorBtn2(btn_0);
             cambiarColorBtn2(btn_1);
             cambiarColorBtn2(btn_2);
@@ -499,30 +496,24 @@ public class Calculadora extends javax.swing.JFrame {
             cambiarColorBtn2(btn_8);
             cambiarColorBtn2(btn_9);
             cambiarColorBtn2(btn_punto);
-            
+
             btn_oscuro.setIcon(new ImageIcon(getClass().getResource("/images/darkmode_2.png")));
-            
+
             btn_igual.setIcon(new ImageIcon(getClass().getResource("/images/btn3_dark.png")));
             btn_igual.setPressedIcon(new ImageIcon(getClass().getResource("/images/btn3_dark.png")));
             btn_igual.setRolloverIcon(new ImageIcon(getClass().getResource("/images/btn3_pressed_dark.png")));
             btn_igual.setForeground(Color.decode("#1a1e1b"));
-            
+
             modoOscuro = true;
-            
+
         } else {
-            
+
             Calculadora frame = new Calculadora();
             this.dispose();
             frame.setVisible(true);
-            
         }
-        
-
     }//GEN-LAST:event_btn_oscuroActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -534,35 +525,33 @@ public class Calculadora extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new Calculadora().setVisible(true);
         });
     }
-    
+
     public void cambiarColorBtn1(JButton btn) {
-        
+
         btn.setIcon(new ImageIcon(getClass().getResource("/images/btn1_dark.png")));
         btn.setPressedIcon(new ImageIcon(getClass().getResource("/images/btn1_dark.png")));
         btn.setRolloverIcon(new ImageIcon(getClass().getResource("/images/btn1_pressed_dark.png")));
-        btn.setForeground(Color.decode("#5d9664"));
-        
+        btn.setForeground(Color.decode("#247632"));
+
     }
-    
+
     public void cambiarColorBtn2(JButton btn) {
-        
+
         btn.setIcon(new ImageIcon(getClass().getResource("/images/btn2_dark.png")));
         btn.setPressedIcon(new ImageIcon(getClass().getResource("/images/btn2_dark.png")));
         btn.setRolloverIcon(new ImageIcon(getClass().getResource("/images/btn1_pressed_dark.png")));
         btn.setForeground(Color.decode("#96a8a0"));
-        
+
     }
-    
+
     public void addNumber(String digito) {
+        
         txtOperacion.setText(txtOperacion.getText() + digito);
     }
 
