@@ -27,7 +27,7 @@ public class Calculadora extends javax.swing.JFrame {
         txtResultado = new javax.swing.JLabel();
         btn_oscuro = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        btn_potencia = new javax.swing.JButton();
+        btn_ce = new javax.swing.JButton();
         btn_raizcuadrada = new javax.swing.JButton();
         btn_division = new javax.swing.JButton();
         btn_multiplicacion = new javax.swing.JButton();
@@ -76,20 +76,20 @@ public class Calculadora extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_potencia.setFont(new java.awt.Font("Liberation Mono", 1, 19)); // NOI18N
-        btn_potencia.setForeground(new java.awt.Color(55, 62, 71));
-        btn_potencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
-        btn_potencia.setText("CE");
-        btn_potencia.setBorderPainted(false);
-        btn_potencia.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_potencia.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
-        btn_potencia.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
-        btn_potencia.addActionListener(new java.awt.event.ActionListener() {
+        btn_ce.setFont(new java.awt.Font("Liberation Mono", 1, 19)); // NOI18N
+        btn_ce.setForeground(new java.awt.Color(55, 62, 71));
+        btn_ce.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btn_ce.setText("CE");
+        btn_ce.setBorderPainted(false);
+        btn_ce.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_ce.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btn_ce.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btn_ce.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_potenciaActionPerformed(evt);
+                btn_ceActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_potencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 50, 50));
+        jPanel2.add(btn_ce, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 50, 50));
 
         btn_raizcuadrada.setFont(new java.awt.Font("Liberation Mono", 1, 24)); // NOI18N
         btn_raizcuadrada.setForeground(new java.awt.Color(55, 62, 71));
@@ -366,11 +366,11 @@ public class Calculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_potenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_potenciaActionPerformed
+    private void btn_ceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ceActionPerformed
         String texto = txtOperacion.getText().substring(0, txtOperacion.getText().length()-1);
         txtOperacion.setText(texto);
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_potenciaActionPerformed
+    }//GEN-LAST:event_btn_ceActionPerformed
 
     private void btn_raizcuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_raizcuadradaActionPerformed
         double ope1, res;
@@ -482,7 +482,7 @@ public class Calculadora extends javax.swing.JFrame {
             cambiarColorBtn1(btn_raizcuadrada);
             cambiarColorBtn1(btn_c);
             cambiarColorBtn1(btn_division);
-            cambiarColorBtn1(btn_potencia);
+            cambiarColorBtn1(btn_ce);
 
             cambiarColorBtn2(btn_0);
             cambiarColorBtn2(btn_1);
@@ -561,11 +561,11 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton btn_8;
     private javax.swing.JButton btn_9;
     private javax.swing.JButton btn_c;
+    private javax.swing.JButton btn_ce;
     private javax.swing.JButton btn_division;
     private javax.swing.JButton btn_igual;
     private javax.swing.JButton btn_multiplicacion;
     private javax.swing.JButton btn_oscuro;
-    private javax.swing.JButton btn_potencia;
     private javax.swing.JButton btn_punto;
     private javax.swing.JButton btn_raizcuadrada;
     private javax.swing.JButton btn_resta;
