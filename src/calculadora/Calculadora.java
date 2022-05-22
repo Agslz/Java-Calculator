@@ -370,7 +370,7 @@ public class Calculadora extends javax.swing.JFrame {
         String texto = txtOperacion.getText().substring(0, txtOperacion.getText().length()-1);
         txtOperacion.setText(texto);
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_ceActionPerformed
+    }
 
     private void btn_raizcuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_raizcuadradaActionPerformed
         double ope1, res;
@@ -378,23 +378,23 @@ public class Calculadora extends javax.swing.JFrame {
         res = Math.sqrt(ope1);
         txtResultado.setText(String.valueOf(res));
         addNumber("√");
-    }//GEN-LAST:event_btn_raizcuadradaActionPerformed
+    }
 
     private void btn_divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divisionActionPerformed
         addNumber("/");
-    }//GEN-LAST:event_btn_divisionActionPerformed
+    }
 
     private void btn_multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_multiplicacionActionPerformed
         addNumber("*");
-    }//GEN-LAST:event_btn_multiplicacionActionPerformed
+    }
 
     private void btn_restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_restaActionPerformed
         addNumber("-");
-    }//GEN-LAST:event_btn_restaActionPerformed
+    }
 
     private void btn_sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sumaActionPerformed
         addNumber("+");
-    }//GEN-LAST:event_btn_sumaActionPerformed
+    }
 
     private void btn_igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_igualActionPerformed
         try {
@@ -404,67 +404,67 @@ public class Calculadora extends javax.swing.JFrame {
             //btn_c.doClick();
             txtOperacion.setText("ERROR");
         }
-    }//GEN-LAST:event_btn_igualActionPerformed
+    }
 
     private void btn_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cActionPerformed
         txtOperacion.setText("");
         txtResultado.setText("");
-    }//GEN-LAST:event_btn_cActionPerformed
+    }
 
     private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_7ActionPerformed
         addNumber("7");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_7ActionPerformed
+    }
 
     private void btn_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_8ActionPerformed
         addNumber("8");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_8ActionPerformed
+    }
 
     private void btn_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_9ActionPerformed
         addNumber("9");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_9ActionPerformed
+    }
 
     private void btn_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4ActionPerformed
         addNumber("4");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_4ActionPerformed
+    }
 
     private void btn_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_5ActionPerformed
         addNumber("5");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_5ActionPerformed
+    }
 
     private void btn_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_6ActionPerformed
         addNumber("6");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_6ActionPerformed
+    }
 
     private void btn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1ActionPerformed
         addNumber("1");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_1ActionPerformed
+    }
 
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
         addNumber("3");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_3ActionPerformed
+    }
 
     private void btn_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2ActionPerformed
         addNumber("2");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_2ActionPerformed
+    }
 
     private void btn_puntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_puntoActionPerformed
         addNumber(".");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_puntoActionPerformed
+    }
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
         addNumber("0");
         btn_igual.doClick();
-    }//GEN-LAST:event_btn_0ActionPerformed
+    }
 
     boolean modoOscuro = false;
 
@@ -511,7 +511,7 @@ public class Calculadora extends javax.swing.JFrame {
             this.dispose();
             frame.setVisible(true);
         }
-    }//GEN-LAST:event_btn_oscuroActionPerformed
+    }
 
     public static void main(String args[]) {
         try {
