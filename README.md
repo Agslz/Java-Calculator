@@ -1,7 +1,5 @@
 # JavaCalculator
 
-A simple Java Calculator with Great UI
-
 ![Calculator Light](screenshots/light.png) ![Calculator Dark](screenshots/dark.png)
 
 ## Features
