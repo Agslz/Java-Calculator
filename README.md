@@ -12,6 +12,6 @@
 ## Getting Started
 
 1. Download the repository files from the download section or clone this project:
-       https://github.com/Agslz/Java-Calculator.git
+       https://github.com/Agslz/java-calculator
 2. Import it in NetBeans or any other Java IDE.
 3. Have fun 🚀.
